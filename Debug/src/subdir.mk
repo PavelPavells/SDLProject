@@ -4,13 +4,16 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../src/SDLProject.cpp 
+../src/SDLProject.cpp \
+../src/Screen.cpp 
 
 OBJS += \
-./src/SDLProject.o 
+./src/SDLProject.o \
+./src/Screen.o 
 
 CPP_DEPS += \
-./src/SDLProject.d 
+./src/SDLProject.d \
+./src/Screen.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
