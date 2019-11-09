@@ -26,7 +26,6 @@ bool Screen::init() {
 			);
 
 	if (m_window == NULL) {
-		//cout << "Could not create window: %s\n" << SDL_GetError() << endl;
 		SDL_Quit();
 		return false;
 	}
@@ -38,14 +37,12 @@ bool Screen::init() {
 			SDL_TEXTUREACCESS_STATIC, SCREEN_WIDTH, SCREEN_HEIGHT);
 
 	if (m_renderer == NULL) {
-		//cout << "========== Could not create Renderer ==========" << endl;
 		SDL_DestroyWindow(m_window);
 		SDL_Quit();
 		return false;
 	}
 
 	if (m_texture == NULL) {
-		//cout << "========== Could not create Texture =========" << endl;
 		SDL_DestroyRenderer(m_renderer);
 		SDL_DestroyWindow(m_window);
 		SDL_Quit();
@@ -95,4 +92,4 @@ void Screen::close() {
 	SDL_Quit();
 }
 
-} /* namespace caveofprogramming */
+} /* namespace Methods */

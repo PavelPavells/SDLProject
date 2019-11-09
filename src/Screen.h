@@ -27,6 +27,6 @@ public:
 	void close();
 };
 
-} /* namespace caveofprogramming */
+} /* namespace Methods */
 
 #endif /* SCREEN_H_ */
