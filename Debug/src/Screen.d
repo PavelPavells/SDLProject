@@ -1,4 +1,4 @@
-src/SDLProject.o: ../src/SDLProject.cpp \
+src/Screen.o: ../src/Screen.cpp ../src/Screen.h \
   /Library/Frameworks/Headers/SDL2/SDL.h \
   /Library/Frameworks/Headers/SDL2/SDL_main.h \
   /Library/Frameworks/Headers/SDL2/SDL_stdinc.h \
@@ -44,8 +44,9 @@ src/SDLProject.o: ../src/SDLProject.cpp \
   /Library/Frameworks/Headers/SDL2/SDL_shape.h \
   /Library/Frameworks/Headers/SDL2/SDL_system.h \
   /Library/Frameworks/Headers/SDL2/SDL_timer.h \
-  /Library/Frameworks/Headers/SDL2/SDL_version.h ../src/Screen.h \
-  ../src/Swarm.h ../src/Particle.h
+  /Library/Frameworks/Headers/SDL2/SDL_version.h
+
+../src/Screen.h:
 
 /Library/Frameworks/Headers/SDL2/SDL.h:
 
@@ -138,9 +139,3 @@ src/SDLProject.o: ../src/SDLProject.cpp \
 /Library/Frameworks/Headers/SDL2/SDL_timer.h:
 
 /Library/Frameworks/Headers/SDL2/SDL_version.h:
-
-../src/Screen.h:
-
-../src/Swarm.h:
-
-../src/Particle.h:
